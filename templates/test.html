@@ -73,9 +73,9 @@
       <div class='panel panel-default panel-success' style='font-family: "Raleway"; margin: 10px'>
         <div class="panel-heading"><em><b>North Dining Hall</b></em></div>
         <div class="panel-body">
-				Crowd Number: <b>403</b>
-				<br>Max Occupancy: <b>750</b>
-				<br>Past Average: <b>410</b>
+				Crowd Number: <b>{{ NDH_crowd }}</b>
+				<br>Max Occupancy: <b>{{ MAX_NDH }}</b>
+				<br>Past Average: <b>{{ NDH_average }}</b>
         </div>
       </div>
 
@@ -83,27 +83,27 @@
         <div class="panel-heading"><em><b>South Dining Hall</em></b>
         </div>
         <div class="panel-body">
-				Crowd Number: <b>395</b>
-				<br>Max Occupancy: <b>750</b>
-				<br>Past Average: <b>414</b>
+				Crowd Number: <b>{{ SDH_crowd }}</b>
+				<br>Max Occupancy: <b>{{ MAX_SDH }}</b>
+				<br>Past Average: <b>{{ SDH_average }}</b>
         </div>
       </div>
 
       <div class='panel panel-default panel-success' style='font-family: "Raleway"; margin: 10px'>
         <div class="panel-heading"><em><b>Hesburgh Library</b></em></div>
         <div class="panel-body">
-				Crowd Number: <b>619</b>
-				<br>Max Occupancy: <b>1000</b>
-				<br>Past Average: <b>605</b>
+				Crowd Number: <b>{{ Hes_crowd }}</b>
+				<br>Max Occupancy: <b>{{ MAX_Hes }}</b>
+				<br>Past Average: <b>{{ Hes_average }}</b>
         </div>
       </div>
 
       <div class='panel panel-default panel-success' style='font-family: "Raleway"; margin: 10px'>
         <div class="panel-heading"><em><b>Smith Center</b></em></div>
         <div class="panel-body">
-				Crowd Number: <b>146</b>
-				<br>Max Occupancy: <b>250</b>
-				<br>Past Average: <b>150</b>
+				Crowd Number: <b>{{ Smiths_crowd }}</b>
+				<br>Max Occupancy: <b>{{ MAX_Smiths }}</b>
+				<br>Past Average: <b>{{ Smiths_average }}</b>
         </div>
       </div>
 
@@ -129,28 +129,28 @@
                 lat: 41.704395,
                 lng: -86.236083
               },
-								circlecolor: '#5cff00',
+								circlecolor: {{ NDH_color }},
             },
             sdh: {
               center: {
                 lat: 41.699465,
                 lng: -86.241422
               },
-								circlecolor: '#f4ff00',
+								circlecolor: {{ SDH_color }},
             },
             smithcenter: {
               center: {
                 lat: 41.698612,
                 lng: -86.235320
               },
-								circlecolor: '#ff7100',
+								circlecolor: {{ Smiths_color }},
             },
             library: {
               center: {
                 lat: 41.702365,
                 lng: -86.234194
               },
-								circlecolor: '#91ff00',
+								circlecolor: {{ Hes_color }},
             }
           };
 
