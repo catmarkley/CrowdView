@@ -7,31 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CrowdView</title>
-  <style>
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
-
-    #map {
-      height: 700px;
-      width: 64%;
-    }
-
-
-    .centered-div {
-      margin: 0 auto !important;
-    }
-
-
-    /* Optional: Makes the sample page fill the window. */
-
-    /* html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: 'Lobster', serif;
-    } */
-  </style>
 
   <!-- Bootstrap CSS files-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -45,12 +20,15 @@
   <!-- Font Awesome Web Icons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- My personal CSS file -->
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='stylesheet.css') }}">
+
 </head>
 
 <body>
   HELLOOOOOOOOOOO {{ name }}, {{ temp }}
   <!-- <div class="container-fluid"> -->
-  <div class='jumbotron' style='background-size: cover; background-position: 0% 30%; background-image: url("crowd-2045498_960_720.jpg"); margin-top: 25px; height: 350px;'>
+  <div class='jumbotron' id="test">
     <h1 style='color:#000000; position:relative; top:-45px' class='jumbotronic'>
           <!-- <font size="72">CrowdView</font> -->
           <div style="font-family: 'Lobster', cursive; text-indent: 50px">CrowdView</div>

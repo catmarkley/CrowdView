@@ -1,0 +1,17 @@
+#map {
+    height: 700px;
+    width: 64%;
+  }
+
+
+  .centered-div {
+    margin: 0 auto !important;
+  }
+
+  #test {
+    background-size: cover;
+    background-position: 0% 30%;
+    background-image: url("crowd-2045498_960_720.jpg");
+    margin-top: 25px;
+    height: 350px;
+  }

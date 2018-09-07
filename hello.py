@@ -41,7 +41,8 @@ START_DAY = day_in - 3
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    img = url_for('static', filename='crowd-2045498_960_720.jpg')
+    return render_template('index.html', **locals())
 
 @app.route("/<string:name>/")
 def index(name):
